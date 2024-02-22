@@ -14,7 +14,7 @@ export const getItems = async (req, res) => {
 
 export const getItemById = async (req, res, id) => {
     try {
-        const item = await itemModel.getItemById(id); // Предполагается, что у вас есть метод getItemById в itemModel
+        const item = await itemModel.getItemById(id);
 
         if (!item) {
             res.statusCode =  404;
